@@ -27,5 +27,43 @@ NTATOPS will deploy a menu in which there are the 6 tools, a section with intere
 -If the 6 tools section is chosen. Then, a menu will be deployed in which it includes:
   -1. Determining whether a number is prime or not:
     The user will provide a number.
-    NTATOPS will 
+    NTATOPS will first search the nearest entire square root of the number given.
+    Then it'll try to divide the number given by lower prime numbers.
+    If one of the modular divisions is 0, then it's composite.
+    Else is prime.
+  -2. Determining the quadratic reciprocals of a number given a certain module.
+    The user will provide a number.
+    The user will provide a module.
+    If the number and the module share divisors, then the user should try again.
+    Else, calculate which number should be multiplied by the first number so that the module gives 1.
+    Print number.
+  -3. Turning a given number into a selected base.
+    The user will provide a number.
+    The user will provide a base.
+    NTATOPS will use the Legendre symbol to transform the given number into the required base.
+    Print number.
+  -4. Descomposition of a large number.
+    The user will provide a number.
+    NTATOPS will use all the division properties to find each divisor of the number.
+    NTATOPS will then express the number as its factorial descomposition and print it.
+  -5. Residue Chinese Theorem given some modular equations.
+    The user will provide some modular equations.
+    NTATOPS will use the Residue Chinese Theorem to determine whether it has a solution or not.
+    Print if it has a solution.
+  -6. Providing the gcd and the lcm of the given numbers.
+    The user will choose between two options: gcd or lcm.
+    If the user chooses gcd, NTATOPS will ask for numbers.
+    Then, NTATOPS will descompose the numbers, find the gcd and print it.
+    If the user chooses lcm, NTATOPS will ask for numbers.
+    Then, NTATOPS will search common multiples and print the least one.
+
+  -If the section with interesting Number Theory Problems is selected:
+   NTATOPS will provide files of problems coming from previous International Math Olympiad problems, IMO Shortlists and 
+   Alexey Beshenov's problems.
+
+  -If the section with definitions is selected:
+   NTATOPS will provide files with definitions of certain Number Theory topics like Alexey Beshenov's quadratic reciprocals, Residue Chinese Theorem, divisibility, modules and prime numbers.
+
+   In further editions of NTATOPS, it will be included Number Theory Functions such as Tau Function and Phi Function.
+    
 
