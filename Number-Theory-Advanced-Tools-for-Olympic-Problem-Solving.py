@@ -295,3 +295,30 @@ def quadratic_reciprocalsEng(a, m):
     else:
         print("There are no quadratic reciprocals.")
 quadratic_reciprocals(number, module)
+
+def number_to_baseEng(number4, base):
+    digits = "0123456789"
+    result = ""
+
+    while number4>0:
+        remainder=number4%base
+        result=digits[remainder]+result
+        number=number//base
+
+    return result
+
+
+def base_mainEng():
+    number=int(input("Enter a decimal number: "))
+    base=int(input("Enter the base (2-10): "))
+
+    if base<2 or base>10:
+        print("Invalid base.")
+    elif number==0:
+        print("Result: 0")
+    else:
+        result=number_to_baseEng(number4, base)
+        print("Result:", result)
+
+
+base_mainEng()
