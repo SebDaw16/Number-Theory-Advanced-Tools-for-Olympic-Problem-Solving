@@ -322,3 +322,30 @@ def base_mainEng():
 
 
 base_mainEng()
+
+def chineseTheorem(equations):
+    M=1
+    for equation in equations:
+        M=M*equation[1]
+    x=0
+    for equation in equations:
+        a=equation[0]
+        m=equation[1]
+        M_k=M//m
+        inverse=0
+        for i in range(1, m):
+            if (M_k*i)%m==1:
+                inverse=i
+                break
+        x=x+a*M_k*inverse
+    return x%M
+    
+n=int(input("How many equations? "))
+equations=[]
+for i in range(n):
+    print("Equation", i + 1)
+    a=int(input("Remainder: "))
+    m=int(input("Modulo: "))
+    equations.append([a, m])
+result=chineseTheorem(equations)
+print("The solution is:", result)
